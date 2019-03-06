@@ -50,6 +50,11 @@ table {
 /*Start custom CSS*/
 *{box-sizing: border-box}
 
+p, a{
+    font-family: fira-sans, sans-serif;
+    font-style: normal;
+}
+
 body{
     background-color: #0e75b0;
     display: flex;
@@ -111,12 +116,15 @@ button{
     font: inherit;
     color: inherit;
     background-color: transparent;
+    font-family: fira-sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 4px;
 }
 
 .button-donate{
     background-color: #f65151;
     border: 1px solid #e23e3e;
-    border-radius: 4px;
     font-size: 24px;
     display: flex;
     justify-content: center;
@@ -124,11 +132,147 @@ button{
     color: white;
 }
 
+.button-donate img{
+    margin-right: 5px;
+}
+
 main{
     background-image: url("./assets/hero.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
 }
+
+main .container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.main-headshot{
+    background-image: url("assets/headshot.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 100px;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    color: #0e75b0;
+    font-family: fira-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 .emph{
+    color: #7ec1e9;
+    text-transform: capitalize;
+}
+
+.form-wrapper{
+    height: 189px;
+    width: 500px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 2px;
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.js-signup-form{
+    display: flex;
+    height: 45px;
+}
+
+fieldset{
+    flex-grow: 1;
+    width: 100%;
+}
+
+.js-signup-form input{
+    height: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #959595;
+    color: #959595;
+    font-family: fira-sans, sans-serif;
+    font-size: 18px;
+}
+
+.button-join{
+    height: 100%;
+    width: 100px;
+    background-color: #f68a51;
+    color: white;
+    font-size: 21px;
+}
+
+.js-zipcode{
+    width: 100px;
+    text-transform: uppercase;
+}
+
+.js-email{
+    flex-grow: 1;
+    text-transform: capitalize;
+}
+
+h2{
+    color: #77c2ef;
+    font-family: fira-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+footer p, footer a{
+    color: white;
+    font-weight: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.footer-logo{
+    background-image: url("assets/logo-reverse.png");
+    height: 85px;
+    width: 163px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+
+.footer-disclaimer{
+    margin-top: 15px;
+    border: 1px solid white;
+    padding: 5px 30px;
+    margin-bottom: 200px;
+}
+
+/*This hides the labels while leaving it accesible to screen readers*/
+.visuallyhidden { 
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+  }
 
 @media only screen and (min-width: 600px){
 
@@ -146,6 +290,26 @@ main{
     .button-donate{
         height: 90px;
         width: 190px;
+    }
+
+    .main-headshot{
+        width: 50%;
+        height: 100%;
+    }
+
+    .main-info{
+        width: 50%;
+        height: 100%;
+    }
+
+    h1{
+        font-size: 60px;
+        line-height: 1.2em;
+    }
+
+    h2{
+        font-size: 32px;
+        margin-bottom: 20px;
     }
 }
 
