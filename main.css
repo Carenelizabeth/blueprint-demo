@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Start custom CSS*/
+*{box-sizing: border-box}
+
+body{
+    background-color: #0e75b0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #38a6e8;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    width: 229px;
+    height: 120px;
+    background-image: url("assets/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-action{
+    display: flex;
+    align-items: center;
+}
+
+.links-social{
+    width: 82px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.link-icon{
+    width: 40px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+/*.link-twitter{
+    background-image: url('./assets/twitter.png');
+}
+
+.link-facebook{
+    background-image: url('./assets/facebook.png');
+}*/
+
+button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+.button-donate{
+    background-color: #f65151;
+    border: 1px solid #e23e3e;
+    border-radius: 4px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main{
+    background-image: url("./assets/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width: 600px){
+
+}
+
+@media only screen and (min-width: 900px){
+    main{
+        height: 600px;        
+    }
+
+    header{
+        height: 150px;
+    }
+
+    .button-donate{
+        height: 90px;
+        width: 190px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .container{
+        width: 1020px;
+    }
+
+
+
+
+}
