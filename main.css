@@ -432,18 +432,23 @@ footer p, footer a{
 
     .js-signup-form{
         height: 45px;
+        flex-direction: row;
     }
 
     .js-signup-form input{
         font-size: 18px;
+        max-width: 230px;
     }
     
     .button-join{
         width: 100px;
         font-size: 21px;
     }
+
+    .js-signup-form .js-email{
+    }
     
-    .js-zipcode{
+    .js-signup-form .js-zipcode{
         width: 100px;
     }
 
