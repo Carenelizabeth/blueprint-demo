@@ -20,6 +20,8 @@ function saveData(){
     console.log(zipcode.value);
     email.value = "";
     zipcode.value = "";
+    document.getElementsByClassName("form-inputs")[0].classList.add("hide");
+    document.getElementsByClassName("form-complete")[0].classList.remove("hide");
 }
 
 donateListener();

@@ -8,7 +8,6 @@
     <link href="main.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.typekit.net/plc4civ.css">
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
-    <script src="//script.sheetsu.com/"></script>
 </head>
 <body>
     <header class="header">
@@ -37,17 +36,20 @@
                         <h2>Join Samantha!</h2>
                         <p>Sign up to receive the latest campaign updates</p>
                     </div>
-                    <div class="form-inputs">
+                    <div class="form-inputs ">
                         <form class="js-signup-form">
                             <fieldset>
                                 <legend class="visuallyhidden">Request signup information</legend>
                                 <label for="email" class="visuallyhidden">Email</label>
-                                <input type="text" name="email" id="email" class="js-email" placeholder="email">
+                                <input type="email" name="email" id="email" class="js-email" placeholder="email" required>
                                 <label for="zipcode" class="visuallyhidden">Zipcode</label>
-                                <input type="text" name="zipcode" id="zipcode" class="js-zipcode" placeholder="zipcode">
+                                <input type="text" inputmode="numeric" name="zipcode" id="zipcode" class="js-zipcode" placeholder="zipcode" required>
                             </fieldset>
                             <button type="submit" class="js-submit button-join">Join ></button>
                         </form>
+                    </div>
+                    <div class="form-complete hide">
+                        <p>Thank you! We'll be in touch!</p>
                     </div>
                 </div>
             </div>

@@ -229,6 +229,17 @@ h1 .emph{
     height: 30px;
 }
 
+
+.form-complete{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.form-complete p{
+    color: #f68a51;
+}
+
 fieldset{
     flex-grow: 1;
     width: 100%;
@@ -304,6 +315,10 @@ footer p, footer a{
     margin-bottom: 200px;
 }
 
+.hide{
+    display: none;
+}
+
 /*This hides the labels while leaving it accesible to screen readers*/
 .visuallyhidden { 
     position: absolute; 
@@ -374,6 +389,10 @@ footer p, footer a{
     .js-signup-form{
         height: 150px;
         flex-direction: column;
+    }
+
+    .form-complete{
+        height: 150px;
     }
 
     .js-signup-form input{
@@ -488,6 +507,11 @@ footer p, footer a{
         border: 1px solid white;
         padding: 5px 30px;
         margin-bottom: 200px;
+    }
+
+    .form-complete p{
+        font-size: 24px;
+        font-weight: bold;
     }
 }
 
